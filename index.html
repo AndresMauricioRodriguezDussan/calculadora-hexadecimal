@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analizador de bytes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Analizador de bytes</h1>
+	<label for="hex-input">Ingresa la secuencia de dígitos hexadecimales:</label><br>
+	<textarea id="hex-input" name="hex-input" rows="10" cols="50"></textarea><br>
+	<label for="byte-pos">Posición del byte:</label><br>
+	<input type="text" id="byte-pos" name="byte-pos"><br>
+	<label for="byte-qty">Cantidad de bytes a obtener:</label><br>
+	<input type="text" id="byte-qty" name="byte-qty"><br>
+	<label for="analysis-type">Forma de análisis:</label><br>
+	<select id="analysis-type" name="analysis-type">
+		<option value="decimal">Decimal</option>
+		<option value="hexadecimal">Hexadecimal</option>
+		<option value="ipv4">Dirección IPv4</option>
+	</select><br>
+	<button type="button" onclick=analyzeBytes()>Analizar</button><br>
+	<label for="result">Resultado:</label><br>
+	<textarea id="result" name="result" rows="10" cols="50"></textarea><br>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+textarea, input[type="text"], select {
+	margin-bottom: 10px;
+}
+
+button {
+	margin-top: 10px;
+}
+
+#result {
+	pointer-events: none;
+}
