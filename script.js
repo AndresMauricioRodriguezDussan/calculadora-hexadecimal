@@ -11,12 +11,8 @@ function analyzeBytes() {
 
 	var byteArr = selectedBytes.match(/.{1,2}/g);
 
-	
-
 	// Obtiene la forma de análisis seleccionada por el usuario
 	var analysisType = document.getElementById("analysis-type").value;
-
-	
 
 	// Convierte el arreglo de bytes a la forma de análisis seleccionada
 	var result;
