@@ -16,20 +16,22 @@ function analyzeBytes() {
 
 	// Convierte el arreglo de bytes a la forma de análisis seleccionada
 	var result;
+	result = byteArr.join(",")+" ---> "
+
 	if (analysisType === "decimal") {
-		result = byteArr.map(hex => parseInt(hex, 16));
-		result.join("");
+		result = result + byteArr.map(hex => parseInt(hex, 16)).join(",");
+		//result.join("");
 	
 	} else if (analysisType === "hexadecimal") {
-		result = byteArr.join("");
+		result = result + byteArr.join(",");
 
 	} else if (analysisType === "ipv4") {
 		// Verifica que se hayan seleccionado cuatro bytes para una dirección IPv4
 		if (byteArr.length !== 4) {
 		result = "No se ha seleccionado una dirección IPv4 válida";
 		} else {
-		result = byteArr.map(hex => parseInt(hex, 16));
-		result = byteArr.join(".");
+		result = result + byteArr.map(hex => parseInt(hex, 16)).join(".");
+		//result = byteArr.join("");
 		}
 	}
 	// Muestra el resultado en el área de texto correspondiente
