@@ -5,6 +5,8 @@ function analyzeBytes() {
 	// Obtiene la posición del byte y la cantidad de bytes a obtener
 	var bytePos = parseInt(document.getElementById("byte-pos").value);
 	var byteQty = parseInt(document.getElementById("byte-qty").value);
+	
+	byteQty = byteQty*2;
 
 	// Obtiene el arreglo de bytes seleccionado
 	var selectedBytes = hexString.slice(bytePos, bytePos + byteQty);
